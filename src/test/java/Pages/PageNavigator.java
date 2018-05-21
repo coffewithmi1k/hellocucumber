@@ -10,4 +10,8 @@ public class PageNavigator extends MyConfig {
 driver.get("Https:google.com");
         return new HomePage();
     }
+    public HomePage openLogoWebsite(){
+        driver.get("http://automationpractice.com/index.php");
+        return new HomePage();
+    }
 }
