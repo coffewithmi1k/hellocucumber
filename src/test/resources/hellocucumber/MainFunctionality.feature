@@ -9,7 +9,7 @@ Feature: Smoke Tests
     And click on Log In link
     Then verify Log in Page Opened
 
-  @define
+  @run
   Scenario: User is able to log in with valid creds
     Given user opens Home Page
     And click on Log In link
