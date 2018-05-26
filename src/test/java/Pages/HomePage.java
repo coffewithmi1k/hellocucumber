@@ -16,4 +16,6 @@ public class HomePage extends MyConfig {
         driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")).click();
         return new LoginPage();
     }
+
+
 }

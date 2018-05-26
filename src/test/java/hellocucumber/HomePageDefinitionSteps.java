@@ -1,9 +1,7 @@
 package hellocucumber;
 
 import Config.MyConfig;
-import Pages.HomePage;
-import Pages.LoginPage;
-import Pages.PageNavigator;
+import Pages.*;
 import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -28,6 +26,8 @@ public class HomePageDefinitionSteps extends MyConfig {
     PageNavigator pagenav = new PageNavigator();
     HomePage onHomePage = new HomePage();
     LoginPage onLoginPage = new LoginPage();
+    MyAccountPage onMyAccountPage = new MyAccountPage();
+    RegisterPage onRegisterPage = new RegisterPage();
 
     @When("^I open google$")
     public void i_open_google()  {
@@ -40,7 +40,7 @@ public class HomePageDefinitionSteps extends MyConfig {
         onHomePage.verifyGooglePageOpened();
     }
 
-    @Given("^I open Home Page$")
+    @Given("^user opens Home Page$")
     public void i_open_Home_Page() throws Exception {
         pagenav.openLogoWebsite();
     }
@@ -53,6 +53,7 @@ public class HomePageDefinitionSteps extends MyConfig {
     public void click_on_Log_In_link() throws Exception {
         onHomePage.clickLoginButton();
     }
+
 
 
 
