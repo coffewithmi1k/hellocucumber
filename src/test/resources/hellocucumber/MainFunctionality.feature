@@ -1,9 +1,9 @@
 Feature: Smoke Tests
-
+  @run
   Scenario: Check Home Page is opened
     Given user opens Home Page
     Then verify HomePage is Opened
-
+  @run
   Scenario: Check Log in page is opened
     Given user opens Home Page
     And click on Log In link
@@ -17,7 +17,7 @@ Feature: Smoke Tests
     And clicks on the Log In button
     Then verifies that user is logged In
 
-  @define
+  @run
   Scenario: User is able to register with valid data
     Given user opens Home Page
     And click on Log In link
@@ -25,5 +25,6 @@ Feature: Smoke Tests
     And clicks Create an account button
     And Fills the register personal data form
     And Clicks register
-    Then verifies that user is registered successfully
+    Then verifies that user is logged In
+
 

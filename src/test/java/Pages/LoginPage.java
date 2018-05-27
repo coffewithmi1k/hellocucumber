@@ -8,7 +8,7 @@ public class LoginPage extends MyConfig {
 
     public void verifyLoginPageOpened() throws InterruptedException {
         Assert.assertTrue(driver.getTitle().contains("Login - My Store"));
-        Thread.sleep(5000);
+
     }
 
     public void fillLoginFormWithValidCreds(){
@@ -22,11 +22,12 @@ public class LoginPage extends MyConfig {
 
     public void fillRegisterFormwithValidEmail(){
         driver.findElement(By.xpath("//*[@id=\"email_create\"]")).sendKeys("myEmailnumber"+
-                ((int)Math.random()*100)+"@mail.com");
+                (int)(Math.random()*100+1)+"@mail.com");
 
     }
-    public RegisterPage clickCreateAnAccountButton(){
+    public RegisterPage clickCreateAnAccountButton() throws InterruptedException {
         driver.findElement(By.xpath("//*[@id=\"SubmitCreate\"]/span")).click();
+
         return  new RegisterPage();
     }
 }
