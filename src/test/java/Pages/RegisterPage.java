@@ -16,10 +16,7 @@ public class RegisterPage extends MyConfig {
        // driver.findElement(By.id("email")).sendKeys("Myemail"+((int)Math.random()*100)+"@gmaill.com");
 //Password
         driver.findElement(By.id("passwd")).sendKeys("qwe1156q");
-//First Name Address
-     //   driver.findElement(By.id("firstname")).sendKeys("Park Avenue 10 2");
-//Last Name address
-       // driver.findElement(By.id("lastname")).sendKeys("what ever");
+
 //Address
         driver.findElement(By.id("address1")).sendKeys("random address");
 //City

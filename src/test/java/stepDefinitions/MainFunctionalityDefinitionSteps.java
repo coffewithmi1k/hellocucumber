@@ -1,19 +1,15 @@
-package hellocucumber;
+package stepDefinitions;
 
 import Config.MyConfig;
 import Pages.*;
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
-
-import static org.junit.Assert.*;
 
 public class MainFunctionalityDefinitionSteps extends MyConfig {
 
